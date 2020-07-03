@@ -1,0 +1,79 @@
+.main {
+    display: grid;                       /* Container de la grilla: 1 sola columna */
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;  /* 3 filas */
+    margin: 50px 0 0; 
+  }
+  
+  .main .header {
+      background-image: url("../images/image.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      width: 100%; }
+  
+  @media (min-width: 768px) {           /* Media Query para pantallas medianas en adelante */
+        .main .header {
+          height: 350px; } }
+  
+  @media (min-width: 992px) {           /* Media Query para pantallas grandes */
+        .main .header {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 3;
+          height: auto; } 
+  }
+  
+  .main .info {
+      box-sizing: border-box;        /* Establece el ancho (width) total descontando margin y padding */
+      padding: 30px; 
+    }
+    
+  .main .info__title {
+        color: $smoky-black;
+        font-family: $old-standardtt;
+        font-size: 30px;
+        font-weight: $bold;
+        letter-spacing: 1.5px;
+        text-transform: uppercase; 
+  }
+  
+  @media (min-width: 768px) {       /* Media Query para pantallas medianas en adelante */
+          .main .info__title {
+            font-size: 50px; } 
+  }
+  
+  @media (min-width: 992px) {       /* Media Query para pantallas grandes en adelante */
+          .main .info__title {
+            line-height: 1.2;
+            margin: 0 100px 0 0; } 
+  }
+  
+  .main .info__text {
+        color: $granite-gray;
+        font-family: $raleway;
+        font-size: $small;
+        font-weight: $regular;
+        margin: 20px 0;
+        line-height: 1.5; }
+  
+  @media (min-width: 768px) {      /* Media Query para pantallas medianas en adelante */
+          .main .info__text {
+            font-size: $medium;
+            margin: 20px 150px 20px 0; } 
+  }
+  
+  @media (min-width: 768px) {      /* Media Query para pantallas medianas en adelante */
+        .main .info {
+          padding: 20px 60px 50px; } 
+  }
+  
+  @media (min-width: 992px) {      /* Media Query para pantallas grandes en adelante */
+        .main .info {
+          padding: 80px; } 
+  }
+
+
+

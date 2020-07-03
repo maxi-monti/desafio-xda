@@ -1,0 +1,79 @@
+.navbar {
+    align-items: center;
+    background-color: $white;
+    box-sizing: border-box;
+    color: $white;
+    display: grid;                           /* Container de la grilla Navbar: 1 sola columna */
+    /*grid-template-columns: 50px auto;*/    /* Características definidas más abajo con */ 
+    /*grid-template-rows: 50px;*/            /* @media (min-width: 768px) */
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+  }
+  
+  .navbar__brand, .navbar__menu, .navbar__hamburger, .navbar__item {
+      align-items: center;
+      display: flex;                      /* Contenedor Flex para alinear los elementos */      
+      height: 100%; 
+  }
+  
+  .navbar__brand {
+      background-color: $smoky-black;
+      font-size: $large;
+      font-weight: $regular;
+      justify-content: center;
+      width: 100%; 
+  }
+  
+  @media (min-width: 768px) {            /* Media Query */
+        .navbar__brand {
+          font-size: $x-large; } 
+  }
+  
+  .navbar__menu {
+      justify-content: flex-end;         /* Alinear elementos de Navbar a la izq */
+  }
+  
+  .navbar__hamburger {
+      color: $smoky-black;
+      cursor: pointer;
+      font-size: $large;
+      font-weight: $bold;
+      padding: 0 40px;
+      text-decoration: none; 
+  }
+  
+  .navbar__hamburger:hover {            /* Ampersand - Cambio de background-color */
+        background-color: $light-gray; 
+  }
+  
+  @media (min-width: 768px) {           /* Media Query - Elemento desaparece a partor de pantallas medianas */
+        .navbar__hamburger {
+          display: none; } 
+  }
+  
+  .navbar__item {
+      color: $smoky-black;
+      cursor: pointer;
+      display: none;
+      font-family: $raleway;
+      font-size: $large;
+      font-weight: $bold;
+      padding: 0 40px;
+      text-decoration: none; 
+    }
+  
+  .navbar__item:hover {                   /* Ampersand - Cambio de background-color */
+        background-color: $light-gray; }
+  
+  @media (min-width: 768px) {
+        .navbar__item {
+          display: flex; } 
+    }
+  
+  @media (min-width: 768px) {
+    .navbar {
+      grid-template-columns: 80px auto;   /* Grid de 1 sola columna a todo ancho */
+      grid-template-rows: 80px; } 
+    }

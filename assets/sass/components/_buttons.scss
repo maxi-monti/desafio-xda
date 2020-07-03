@@ -1,0 +1,41 @@
+.button {
+    background-color: $white;
+    border: 1px solid $smoky-black;
+    color: $smoky-black;
+    cursor: pointer;
+    font-family: $raleway;
+    font-size: $small;
+    font-weight: $bold;
+    padding: 10px; }
+  
+  
+  .button:hover {
+    border-color: $quick-silver; 
+  }
+  
+  .button:focus {
+      border-color: $quick-silver;
+      color: $quick-silver; 
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      font-size: $large;
+      padding: 10px 20px; } 
+    }
+  
+  .input {
+    border: 1px solid $quick-silver;
+    color: $smoky-black;
+    font-family: $raleway;
+    font-size: $small;
+    font-weight: $regular;
+    padding: 5px;
+    width: 100%; 
+  }
+  
+  @media (min-width: 768px) {
+    .input {
+      font-size: $medium;
+      padding: 7px; } 
+    }

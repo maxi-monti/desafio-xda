@@ -1,0 +1,87 @@
+.main .newsletter {
+    display: grid;                      /* Container de la grilla: 2 columnas */
+    grid-template-columns: auto 50px;
+    grid-template-rows: auto; 
+  }
+
+.main .newsletter__form {
+      background-color: $smoky-black;
+      box-sizing: border-box;
+      padding: 20px 30px; 
+}
+      
+@media (min-width: 768px) {            /* Media Query para pantallas medianas en adelante */
+        .main .newsletter__form {
+          padding: 30px 60px 50px; } 
+}
+      
+@media (min-width: 992px) {           /* Media Query para pantallas grandes en adelante */
+        .main .newsletter__form {
+          padding: 30px 80px 50px; } 
+}
+    
+.main .newsletter__title {
+      color: $white;
+      font-family: $old-standardtt;
+      font-size: $x-large;
+      font-weight: $bold;
+      margin: 0 0 10px 0; 
+}
+
+@media (min-width: 768px) {            /* Media Query para pantallas medianas en adelante */
+        .main .newsletter__title {
+          font-size: $xx-large;
+          margin: 0 0 20px 0; } 
+}
+
+.main .newsletter__email {
+      overflow: hidden;
+      width: 100%; 
+}
+
+.main .newsletter__label {
+      color: $light-gray;
+      display: block;
+      font-size: $small;
+      font-weight: $regular;
+      margin: 0 0 5px 0; 
+}
+
+@media (min-width: 768px) {            /* Media Query para pantallas medianas en adelante */
+        .main .newsletter__label {
+          font-size: $medium;
+          margin: 0 0 10px 0; } 
+}
+
+
+.main .newsletter__subscribe {
+      align-items: center;
+      background-color: $white;
+      display: flex;
+      font-size: $large;
+      font-weight: $bold;
+      justify-content: center;
+      text-orientation: mixed;
+      writing-mode: vertical-rl; 
+}
+
+@media (min-width: 768px) {                 /* Media Query para pantallas medianas en adelante */
+        .main .newsletter__subscribe {
+          font-size: $x-large; } 
+}
+
+@media (min-width: 768px) {                /* Media Query para pantallas medianas en adelante */
+      .main .newsletter {
+        grid-template-columns: auto 80px; } 
+}
+
+@media (min-width: 768px) {               /* Media Query para pantallas medianas en adelante */
+    .main {                               /* El main cambia sus margin */
+      margin: 80px 0 0; } 
+}
+
+@media (min-width: 992px) {               /* Media Query para pantallas medianas en adelante */
+    .main {
+      grid-template-columns: 1fr 1.5fr;   /* El main pasa a tener 2 columnas */
+      grid-template-rows: auto; } 
+}
